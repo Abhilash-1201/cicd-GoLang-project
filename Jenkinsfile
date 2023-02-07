@@ -10,7 +10,7 @@ pipeline{
         stage('code checkout from GitHub'){
             steps{
                 //check out code from the GitHub
-                git 'https://github.com/Abhilash-1201/python-crud-application.git'
+                git branch: 'main', url: 'https://github.com/Abhilash-1201/cicd-GoLang-project.git'
                 //script {
                //     def props = readProperties file: 'sonar-project.properties'
                //     env.SONAR_HOST_URL = props['sonar.host.url']
